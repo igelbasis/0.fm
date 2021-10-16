@@ -1,0 +1,40 @@
+#N canvas 761 291 808 495 12;
+#X msg 257 320 #fff3d9 #feffdc #e6ffe9 #e8feff;
+#X obj 286 20 loadbang;
+#X obj 286 45 f \$2;
+#X obj 286 110 sel 0 1 2 3;
+#X obj 250 262 s \$0-bg;
+#X obj 306 262 s \$0-bga;
+#X obj 600 128 + 1;
+#X obj 391 12 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 16 16 cnv 15 100 80 empty \$0-bg empty 20 12 0 14 -261943 -228856
+0;
+#X obj 12 12 ctl_adsr \$1 \$2;
+#X obj 126 16 cnv 15 51 80 empty \$0-bga o1 -20 65 1 60 -261943 -228856
+0;
+#X obj 122 12 ctl_pitch \$1 \$2;
+#X msg 600 228 label o\$1;
+#X msg 250 172 color #fff3d9 #c0c0c0 #dfdfdf, f 8;
+#X msg 327 172 color #feffdc #c0c0c0 #dfdfdf, f 8;
+#X msg 403 172 color #e6ffe9 #c0c0c0 #dfdfdf, f 8;
+#X msg 480 172 color #e8feff #c0c0c0 #dfdfdf, f 8;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 6 0;
+#X connect 3 0 13 0;
+#X connect 3 1 15 0;
+#X connect 3 2 14 0;
+#X connect 3 3 16 0;
+#X connect 6 0 12 0;
+#X connect 7 0 2 0;
+#X connect 12 0 5 0;
+#X connect 13 0 4 0;
+#X connect 13 0 5 0;
+#X connect 14 0 4 0;
+#X connect 14 0 5 0;
+#X connect 15 0 4 0;
+#X connect 15 0 5 0;
+#X connect 16 0 4 0;
+#X connect 16 0 5 0;
+#X coords 0 -1 1 1 169 90 2 10 10;

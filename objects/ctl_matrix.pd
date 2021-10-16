@@ -1,0 +1,32 @@
+#N canvas 551 59 1002 894 12;
+#X msg 229 254 #fff3d9 #feffdc #e6ffe9 #e8feff;
+#X obj 15 19 cnv 10 47 12 empty \$0-bg0 empty 20 12 0 14 -261943 -261943
+0;
+#X obj 70 40 cnv 10 47 12 empty \$0-bg1 empty 20 12 0 14 -237563 -237563
+0;
+#X obj 125 61 cnv 10 47 12 empty \$0-bg2 empty 20 12 0 14 -262136 -262136
+0;
+#X obj 180 82 cnv 10 47 12 empty \$0-bg3 empty 20 12 0 14 -241664 -241664
+0;
+#X msg 78 322 color #fff3d9 #fff3d9 #fff3d9, f 8;
+#X msg 151 322 color #e6ffe9 #e6ffe9 #e6ffe9, f 8;
+#X msg 223 322 color #feffdc #feffdc #feffdc, f 8;
+#X msg 295 322 color #e8feff #e8feff #e8feff, f 8;
+#X obj 78 390 s \$0-bg0;
+#X obj 151 390 s \$0-bg1;
+#X obj 223 390 s \$0-bg2;
+#X obj 295 390 s \$0-bg3;
+#X obj 127 240 loadbang;
+#X obj 12 12 ctl_matrix_strip \$1 out0 m21 m31 m41;
+#X obj 67 12 ctl_matrix_strip \$1 m12 out1 m32 m42;
+#X obj 122 12 ctl_matrix_strip \$1 m13 m23 out2 m43;
+#X obj 177 12 ctl_matrix_strip \$1 m14 m24 m34 out3;
+#X connect 5 0 9 0;
+#X connect 6 0 10 0;
+#X connect 7 0 11 0;
+#X connect 8 0 12 0;
+#X connect 13 0 5 0;
+#X connect 13 0 8 0;
+#X connect 13 0 7 0;
+#X connect 13 0 6 0;
+#X coords 0 -1 1 1 224 90 2 10 10;

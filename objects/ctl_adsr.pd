@@ -1,0 +1,13 @@
+#N canvas 383 178 450 300 12;
+#X floatatom 12 12 7 0 127 0 - #1-attack#2-set #1-attack#2;
+#X floatatom 12 33 7 0 127 0 - #1-decay#2-set #1-decay#2;
+#X floatatom 12 54 7 0 127 0 - #1-sustain#2-set #1-sustain#2;
+#X floatatom 12 75 7 0 127 0 - #1-release#2-set #1-release#2;
+#X floatatom 65 12 7 -64 63 0 - #1-attack_curve#2-set #1-attack_curve#2
+;
+#X floatatom 65 33 7 -64 63 0 - #1-decay_curve#2-set #1-decay_curve#2
+;
+#X floatatom 65 75 7 -64 63 0 - #1-release_curve#2-set #1-release_curve#2
+;
+#X floatatom 65 54 7 0 127 0 - #1-delay#2-set #1-delay#2;
+#X coords 0 -1 1 1 108 86 2 10 10;
