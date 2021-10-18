@@ -1,6 +1,6 @@
-#N canvas 1063 59 450 300 12;
+#N canvas 1073 59 450 300 12;
 #X floatatom 12 12 7 -64 63 0 - #1-fine#2-set #1-fine#2;
-#X floatatom 12 33 7 -64 63 0 - #1-octave#2-set #1-octave#2;
+#X floatatom 12 33 7 0 127 0 - #1-detune#2-set #1-detune#2;
 #X floatatom 12 54 7 0 127 0 - #1-harmonicity#2-set #1-harmonicity#2
 ;
 #X floatatom 12 75 7 0 127 0 - #1-feedback#2-set #1-feedback#2;

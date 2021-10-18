@@ -1,4 +1,4 @@
-#N canvas 1392 402 661 668 12;
+#N canvas 1259 402 661 668 12;
 #X floatatom 235 65 5 0 0 0 - #0-pitch-set #0-pitch;
 #X floatatom 235 87 5 0 0 0 - #0-velocity-set #0-velocity;
 #X floatatom 235 109 1 0 0 0 - #0-trigger-set #0-trigger;
